@@ -7,7 +7,7 @@ export const style = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'baseline',
     },
-
+/*
     botao: {
         backgroundColor: '#C4C4C4',
         width: 100,
@@ -191,7 +191,7 @@ export const style = StyleSheet.create({
         height: 110,
         width: 110,
     },
-
+*/
 
     /*//////////////////////////////////////////////////////////////////////////////////////////
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -204,10 +204,10 @@ export const style = StyleSheet.create({
     
     colunas: {
         flexDirection: 'row',
+        justifyContent: 'space-around',
     },
     
     telaToda: {
-        justifyContent: 'space-around',
         width: "100%",
     },
     
@@ -220,12 +220,29 @@ export const style = StyleSheet.create({
         height: 90,
         alignItems: 'center',
         backgroundColor: '#424141',
+        justifyContent: 'space-around',
+    },
+
+    naviColunas: {
+        flexDirection: 'row',
+        height: 90,
+        width: 280,
+        //backgroundColor: '#FFF',
+        //justifyContent: 'space-around',
+    }, 
+
+    naviImgPos: {
+        marginTop: '1%',
+        marginLeft: '1%',
     },
 
     naviRect: {
-        width: 100,
+        width: 140,
         height: 40,
+        marginTop: '0.5%',
         borderRadius: 20,
+        alignItems: 'center',
+        backgroundColor: '#C4C4C4',
     },
         
 
@@ -242,7 +259,7 @@ export const style = StyleSheet.create({
         fontFamily: 'sans-serif-condensed',
     },
 
-    atributosValior: {
+    atributosValor: {
         fontSize: 17,
         fontWeight: 'bold',
         color: '#000000',
@@ -260,6 +277,15 @@ export const style = StyleSheet.create({
         fontFamily: 'sans-serif-condensed',
     },
 
+    naviText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        alignSelf: 'flex-start',
+        marginTop: '5%',
+        marginLeft: '5%',
+        fontFamily: 'sans-serif-condensed',
+    },
+
     // Fim da definição de textos
 
     // Definição das imagens
@@ -267,6 +293,12 @@ export const style = StyleSheet.create({
     imagemAtributo: {
         height: 80,
         width: 80,
+    },
+
+    naviImag: {
+        width: 50,
+        height: 50,
+        //alignSelf: 'flex-start',
     },
 
     // Fim das definições das imagens
@@ -294,8 +326,7 @@ export const style = StyleSheet.create({
         borderRadius: 100,
         alignItems: 'center',
         justifyContent: 'center',
-        marginLeft: '5%',
-        marginTop: 'auto',
+        marginLeft: '10%',
         marginBottom: '5%',
     },
 
@@ -303,6 +334,12 @@ export const style = StyleSheet.create({
 
     // Componentes da coluna 2
     
+    coluna2: {
+        width: 180,
+        height: "100%",
+        marginRight: "1%",
+    },
+
     // Fim dos componentes da coluna 2
 
     // Componentes da coluna 3

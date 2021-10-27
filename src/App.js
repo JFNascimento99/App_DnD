@@ -12,90 +12,106 @@ const App = () => {
         <SafeAreaView style={style.container}>
 
 
-                <View style={style.telaToda}>
+            <View style={style.telaToda}>
 
-                    <View style={style.naviBar}>
-            
+                <View style={style.naviBar}>
+                    <View style={style.naviImgPos}>
+                        <Image style={style.naviImag} source={require('./assets/Character.png')} />
                     </View>
-
-                    <View style={style.colunas}>
-
-                        {/* Inicio da coluna 1 */}
-
-                        <View style={style.coluna1}>
-
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>For</Text>
-                                    <Text style={style.atributosValior}>XX</Text>
-                                    <Text style={style.atributosModif}>+X</Text>
-                                </ImageBackground>
+                    <View style={style.naviColunas}>
+                        <View style={style.naviColunas}>
+                            <TouchableOpacity style={style.naviRect}>
+                                <Text style={style.naviText}>Nome</Text>
                             </TouchableOpacity>
-
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Des</Text>
-                                    <Text style={style.atributosValior}>XX</Text>
-                                    <Text style={style.atributosModif}>+X</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Cons</Text>
-                                    <Text style={style.atributosValior}>XX</Text>
-                                    <Text style={style.atributosModif}>+X</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Int</Text>
-                                    <Text style={style.atributosValior}>XX</Text>
-                                    <Text style={style.atributosModif}>+X</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Sab</Text>
-                                    <Text style={style.atributosValior}>XX</Text>
-                                    <Text style={style.atributosModif}>+X</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Car</Text>
-                                    <Text style={style.atributosValior}>XX</Text>
-                                    <Text style={style.atributosModif}>+X</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity style={style.botaoAmareloEsq}>
-                                <Image source={require('./assets/Scroll.png')} resizeMode='contain' style={style.imagemBotom} />
+                            <TouchableOpacity style={style.naviRect}>
+                                <Text style={style.naviText}>Nome</Text>
                             </TouchableOpacity>
                         </View>
-
-                        {/* Fim da coluna 1 */}
-
-                        {/* Inicio da coluna 2 */}
-
-                        {/* Fim da coluna 2 */}
-
-                        {/* Inicio da coluna 3 */}
-
-                        <View style={style.coluna3}>
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Desloc</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
-                        </View>
-
-                        {/* Fim da coluna 3 */}
                     </View>
                 </View>
+
+                <View style={style.colunas}>
+
+                    {/* Inicio da coluna 1 */}
+
+                    <View style={style.coluna1}>
+
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>For</Text>
+                                <Text style={style.atributosValor}>XX</Text>
+                                <Text style={style.atributosModif}>+X</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>Des</Text>
+                                <Text style={style.atributosValor}>XX</Text>
+                                <Text style={style.atributosModif}>+X</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>Cons</Text>
+                                <Text style={style.atributosValor}>XX</Text>
+                                <Text style={style.atributosModif}>+X</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>Int</Text>
+                                <Text style={style.atributosValor}>XX</Text>
+                                <Text style={style.atributosModif}>+X</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>Sab</Text>
+                                <Text style={style.atributosValor}>XX</Text>
+                                <Text style={style.atributosModif}>+X</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>Car</Text>
+                                <Text style={style.atributosValor}>XX</Text>
+                                <Text style={style.atributosModif}>+X</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.botaoAmareloEsq}>
+                            <Image source={require('./assets/Scroll.png')} resizeMode='contain' style={style.imagemBotom} />
+                        </TouchableOpacity>
+                    </View>
+
+                    {/* Fim da coluna 1 */}
+
+                    {/* Inicio da coluna 2 */}
+
+                    <View style={style.coluna2}>
+
+                    </View>
+
+                    {/* Fim da coluna 2 */}
+
+                    {/* Inicio da coluna 3 */}
+
+                    <View style={style.coluna3}>
+                        <TouchableOpacity style={style.atributoPattern}>
+                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                <Text style={style.atributosTexto}>Desloc</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+                    </View>
+
+                    {/* Fim da coluna 3 */}
+                </View>
+            </View>
 
         </SafeAreaView>
     );

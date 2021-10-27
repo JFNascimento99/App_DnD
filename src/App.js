@@ -161,6 +161,15 @@ const App = () => {
                             </ImageBackground>
                         </TouchableOpacity>
 
+                        <View style={style.inventarioRec}>
+                            <TouchableOpacity style={style.botaoAmareloDirPP}>
+                                <Image source={require('./assets/Moedas.png')} resizeMode='contain' style={style.imagemBotom} />
+                            </TouchableOpacity>
+                            <TouchableOpacity style={style.botaoAmareloDirPP}>
+                                <Image source={require('./assets/Mochila.png')} resizeMode='contain' style={style.imagemBotom} />
+                            </TouchableOpacity>
+                        </View>
+
                         <TouchableOpacity style={style.botaoAmareloDir}>
                             <Image source={require('./assets/Espada.png')} resizeMode='contain' style={style.imagemBotom} />
                         </TouchableOpacity>

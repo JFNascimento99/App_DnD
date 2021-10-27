@@ -21,10 +21,7 @@ export const style = StyleSheet.create({
             marginLeft: 10,
         },
     
-        imagemBotom: {
-            width: 50,
-            height: 50,
-        },
+        
     
         imagemRight: {
             width: 45,
@@ -41,16 +38,7 @@ export const style = StyleSheet.create({
             //backgroundColor: '#FFFFFF',
         },
     
-        botaoAmareloDirPP: {
-            backgroundColor: '#F9D366',
-            width: 65,
-            height: 65,
-            borderRadius: 100,
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginTop: '10%',
-            marginBottom: '2%',
-        },
+        
     
         viewStyleColun: {
             display: 'flex',
@@ -305,6 +293,10 @@ export const style = StyleSheet.create({
 
     // Definição das imagens
 
+    imagemBotom: {
+        width: 50,
+        height: 50,
+    },
     imagemAtributo: {
         height: 80,
         width: 80,
@@ -334,7 +326,7 @@ export const style = StyleSheet.create({
     coluna1: {
         width: 90,
         height: "100%",
-        marginLeft: "1%",
+        //marginLeft: "1%",
         //backgroundColor: "#FFFFFF",
     },
 
@@ -384,18 +376,36 @@ export const style = StyleSheet.create({
     coluna3: {
         width: 90,
         height: "100%",
-        marginRight: "1%",
+        //marginLeft: "1%",
         //backgroundColor: "#FFFFFF",
     },
-    
-    healthBarRec:{
+
+    healthBarRec: {
         width: 50,
         height: 160,
+        marginTop: '20%',
         alignSelf: 'center',
     },
 
-    inventarioRec:{
-        
+    inventarioRec: {
+        width: 65,
+        height: 145,
+        alignItems: 'center',
+        marginLeft: '15%',
+        marginTop: '90%',
+        //backgroundColor: '#FFF'
+    },
+
+    botaoAmareloDirPP: {
+        backgroundColor: '#F9D366',
+        width: 65,
+        height: 65,
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '10%',
+        marginBottom: '2%',
+        marginLeft: '5%',
     },
 
     botaoAmareloDir: {
@@ -403,9 +413,11 @@ export const style = StyleSheet.create({
         width: 80,
         height: 80,
         borderRadius: 100,
+        marginTop: '2%',
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 'auto',
+        marginLeft: '5%',
     },
 
 

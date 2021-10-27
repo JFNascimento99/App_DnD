@@ -24,7 +24,7 @@ const App = () => {
                                 <Text style={style.naviText}>Nome</Text>
                             </TouchableOpacity>
                             <TouchableOpacity style={style.naviRect}>
-                                <Text style={style.naviText}>Nome</Text>
+                                <Text style={style.naviText}>Raça</Text>
                             </TouchableOpacity>
                         </View>
                     </View>

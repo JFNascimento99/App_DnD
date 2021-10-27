@@ -152,6 +152,18 @@ const App = () => {
                                 <Text style={style.atributosTexto}>Desloc</Text>
                             </ImageBackground>
                         </TouchableOpacity>
+
+                        <TouchableOpacity style={style.healthBarRec}>
+                            <ImageBackground style={style.healthBar} source={require('./assets/BarraHP.png')}>
+                                <Text style={style.HpTxt}>XX</Text>
+                                <Text style={style.HpTxt}>----</Text>
+                                <Text style={style.HpTxt}>XX</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.botaoAmareloDir}>
+                            <Image source={require('./assets/Espada.png')} resizeMode='contain' style={style.imagemBotom} />
+                        </TouchableOpacity>
                     </View>
 
                     {/* Fim da coluna 3 */}

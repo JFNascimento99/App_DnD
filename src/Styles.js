@@ -7,181 +7,181 @@ export const style = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'baseline',
     },
-/*
-    botao: {
-        backgroundColor: '#C4C4C4',
-        width: 100,
-        height: 100,
-        paddingHorizontal: 5,
-        paddingVertical: 15,
-        borderRadius: 5,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 10,
-        marginLeft: 10,
-    },
-
-    imagemBotom: {
-        width: 50,
-        height: 50,
-    },
-
-    imagemRight: {
-        width: 45,
-        height: 45,
-    },
-
-
+    /*
+        botao: {
+            backgroundColor: '#C4C4C4',
+            width: 100,
+            height: 100,
+            paddingHorizontal: 5,
+            paddingVertical: 15,
+            borderRadius: 5,
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 10,
+            marginLeft: 10,
+        },
     
-
-    viewStyleRow: {
-        display: 'flex',
-        flexDirection: 'row-reverse',
-        marginTop: 'auto',
-        //backgroundColor: '#FFFFFF',
-    },
-
-    botaoAmareloDirPP: {
-        backgroundColor: '#F9D366',
-        width: 65,
-        height: 65,
-        borderRadius: 100,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: '10%',
-        marginBottom: '2%',
-    },
-
-    viewStyleColun: {
-        display: 'flex',
-        flexDirection: 'column-reverse',
-        marginTop: 'auto',
-        marginBottom: '1%',
-        marginLeft: '81%',
-        //backgroundColor: '#FFFFFF',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 150,
-        width: 70,
-    },
-
-    atributosViewFor: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '2%',
-        marginLeft: '2%',
-        alignItems: 'center',
-        overflow: 'hidden',
-    },
-
-    atributosViewDes: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '1%',
-        marginLeft: '2%',
-        alignItems: 'center',
-        overflow: 'hidden',
-    },
-
-    atributosViewCons: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '1%',
-        marginLeft: '2%',
-        alignItems: 'center',
-        overflow: 'hidden',
-    },
-
-    atributosViewInt: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '1%',
-        marginLeft: '2%',
-        alignItems: 'center',
-        overflow: 'hidden',
-    },
-
-    atributosViewSab: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '1%',
-        marginLeft: '2%',
-        alignItems: 'center',
-        overflow: 'hidden',
-    },
-
-    atributosViewCar: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '1%',
-        marginLeft: '2%',
-        alignItems: 'center',
-        overflow: 'hidden',
-    },
-
-    ArmorClassView: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '-122%',
-        marginLeft: '40%',
-        alignItems: 'center',
-        overflow: 'hidden',
-        justifyContent: 'center',
-    },
-
-    IniciativaView: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '-122%',
-        marginLeft: '5%',
-        alignItems: 'center',
-        overflow: 'hidden',
-        justifyContent: 'center',
-    },
-
-    DeslocamentoView: {
-        display: 'flex',
-        flexDirection: 'column',
-        //backgroundColor: '#FFFFFF',
-        height: 80,
-        width: 80,
-        marginTop: '-122%',
-        marginLeft: '40%',
-        alignItems: 'center',
-        overflow: 'hidden',
-        justifyContent: 'center',
-    },
-
-
-    imagemCA: {
-        height: 110,
-        width: 110,
-    },
-*/
+        imagemBotom: {
+            width: 50,
+            height: 50,
+        },
+    
+        imagemRight: {
+            width: 45,
+            height: 45,
+        },
+    
+    
+        
+    
+        viewStyleRow: {
+            display: 'flex',
+            flexDirection: 'row-reverse',
+            marginTop: 'auto',
+            //backgroundColor: '#FFFFFF',
+        },
+    
+        botaoAmareloDirPP: {
+            backgroundColor: '#F9D366',
+            width: 65,
+            height: 65,
+            borderRadius: 100,
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginTop: '10%',
+            marginBottom: '2%',
+        },
+    
+        viewStyleColun: {
+            display: 'flex',
+            flexDirection: 'column-reverse',
+            marginTop: 'auto',
+            marginBottom: '1%',
+            marginLeft: '81%',
+            //backgroundColor: '#FFFFFF',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: 150,
+            width: 70,
+        },
+    
+        atributosViewFor: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '2%',
+            marginLeft: '2%',
+            alignItems: 'center',
+            overflow: 'hidden',
+        },
+    
+        atributosViewDes: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '1%',
+            marginLeft: '2%',
+            alignItems: 'center',
+            overflow: 'hidden',
+        },
+    
+        atributosViewCons: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '1%',
+            marginLeft: '2%',
+            alignItems: 'center',
+            overflow: 'hidden',
+        },
+    
+        atributosViewInt: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '1%',
+            marginLeft: '2%',
+            alignItems: 'center',
+            overflow: 'hidden',
+        },
+    
+        atributosViewSab: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '1%',
+            marginLeft: '2%',
+            alignItems: 'center',
+            overflow: 'hidden',
+        },
+    
+        atributosViewCar: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '1%',
+            marginLeft: '2%',
+            alignItems: 'center',
+            overflow: 'hidden',
+        },
+    
+        ArmorClassView: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '-122%',
+            marginLeft: '40%',
+            alignItems: 'center',
+            overflow: 'hidden',
+            justifyContent: 'center',
+        },
+    
+        IniciativaView: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '-122%',
+            marginLeft: '5%',
+            alignItems: 'center',
+            overflow: 'hidden',
+            justifyContent: 'center',
+        },
+    
+        DeslocamentoView: {
+            display: 'flex',
+            flexDirection: 'column',
+            //backgroundColor: '#FFFFFF',
+            height: 80,
+            width: 80,
+            marginTop: '-122%',
+            marginLeft: '40%',
+            alignItems: 'center',
+            overflow: 'hidden',
+            justifyContent: 'center',
+        },
+    
+    
+        imagemCA: {
+            height: 110,
+            width: 110,
+        },
+    */
 
     /*//////////////////////////////////////////////////////////////////////////////////////////
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -191,22 +191,22 @@ export const style = StyleSheet.create({
 
     // Definição da tela
 
-    
+
     colunas: {
         flexDirection: 'row',
         justifyContent: 'space-around',
     },
-    
+
     telaToda: {
         width: "100%",
     },
-    
+
     // Fim da definição da tela
-    
+
     // Definição da navi bar
-    
+
     naviBar: {
-        width:"100%",
+        width: "100%",
         height: 90,
         alignItems: 'center',
         backgroundColor: '#424141',
@@ -219,7 +219,7 @@ export const style = StyleSheet.create({
         width: 280,
         //backgroundColor: '#FFF',
         justifyContent: 'space-around',
-    }, 
+    },
 
     naviImgPos: {
         marginTop: '1%',
@@ -234,7 +234,7 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#C4C4C4',
     },
-        
+
 
     // Fim da definição da navi bar
 
@@ -292,6 +292,15 @@ export const style = StyleSheet.create({
         fontFamily: 'sans-serif-condensed',
     },
 
+    HpTxt: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: '#000000',
+        //marginTop: '10%',
+        alignSelf: 'center',
+        fontFamily: 'sans-serif-condensed',
+    },
+
     // Fim da definição de textos
 
     // Definição das imagens
@@ -314,6 +323,11 @@ export const style = StyleSheet.create({
         //alignSelf: 'flex-start',
     },
 
+    healthBar: {
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+    },
     // Fim das definições das imagens
 
     // Componentes da coluna 1
@@ -346,7 +360,7 @@ export const style = StyleSheet.create({
     // Fim dos componentes da coluna 1
 
     // Componentes da coluna 2
-    
+
     coluna2: {
         width: 180,
         height: "100%",
@@ -373,6 +387,16 @@ export const style = StyleSheet.create({
         marginRight: "1%",
         //backgroundColor: "#FFFFFF",
     },
+    
+    healthBarRec:{
+        width: 50,
+        height: 160,
+        alignSelf: 'center',
+    },
+
+    inventarioRec:{
+        
+    },
 
     botaoAmareloDir: {
         backgroundColor: '#F9D366',
@@ -381,10 +405,10 @@ export const style = StyleSheet.create({
         borderRadius: 100,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 'auto',
-        marginBottom: '1%',
-        marginLeft: '57%',
+        marginBottom: 'auto',
     },
+
+
 
     // Fim dos componentes da coluna 3
 

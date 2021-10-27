@@ -32,17 +32,7 @@ export const style = StyleSheet.create({
     },
 
 
-    botaoAmareloDir: {
-        backgroundColor: '#F9D366',
-        width: 80,
-        height: 80,
-        borderRadius: 100,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 'auto',
-        marginBottom: '1%',
-        marginLeft: '57%',
-    },
+    
 
     viewStyleRow: {
         display: 'flex',
@@ -277,6 +267,22 @@ export const style = StyleSheet.create({
         fontFamily: 'sans-serif-condensed',
     },
 
+    caracText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        alignSelf: 'center',
+        marginTop: '25%',
+        fontFamily: 'sans-serif-condensed',
+    },
+
+    caracTextPP: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        alignSelf: 'center',
+        marginTop: '25%',
+        fontFamily: 'sans-serif-condensed',
+    },
+
     naviText: {
         fontSize: 20,
         fontWeight: 'bold',
@@ -293,6 +299,13 @@ export const style = StyleSheet.create({
     imagemAtributo: {
         height: 80,
         width: 80,
+    },
+
+    imagemTextos: {
+        height: 80,
+        width: '100%',
+        marginTop: '1%',
+        //backgroundColor: '#fff',
     },
 
     naviImag: {
@@ -338,6 +351,7 @@ export const style = StyleSheet.create({
         width: 180,
         height: "100%",
         marginRight: "1%",
+        alignItems: 'center',
         //backgroundColor: '#FFF',
     },
 
@@ -357,7 +371,19 @@ export const style = StyleSheet.create({
         width: 90,
         height: "100%",
         marginRight: "1%",
-        backgroundColor: "#FFFFFF",
+        //backgroundColor: "#FFFFFF",
+    },
+
+    botaoAmareloDir: {
+        backgroundColor: '#F9D366',
+        width: 80,
+        height: 80,
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 'auto',
+        marginBottom: '1%',
+        marginLeft: '57%',
     },
 
     // Fim dos componentes da coluna 3

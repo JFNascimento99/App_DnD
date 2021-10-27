@@ -101,6 +101,7 @@ const App = () => {
                                     <Text style={style.atributosValor}>XX</Text>
                                 </ImageBackground>
                             </TouchableOpacity>
+
                             <TouchableOpacity style={style.atributoPattern}>
                                 <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
                                     <Text style={style.atributosTexto}>Init</Text>
@@ -108,6 +109,37 @@ const App = () => {
                                 </ImageBackground>
                             </TouchableOpacity>
                         </View>
+
+                        <TouchableOpacity style={style.imagemTextos}>
+                            <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
+                                <Text style={style.caracText}>Perícias</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.imagemTextos}>
+                            <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
+                                <Text style={style.caracTextPP}>Traços de personalidade</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.imagemTextos}>
+                            <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
+                                <Text style={style.caracText}>Ideais</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.imagemTextos}>
+                            <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
+                                <Text style={style.caracText}>Ligações</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={style.imagemTextos}>
+                            <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
+                                <Text style={style.caracText}>Defeitos</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+
                     </View>
 
                     {/* Fim da coluna 2 */}

@@ -15,9 +15,9 @@ const App = () => {
             <View style={style.telaToda}>
 
                 <View style={style.naviBar}>
-                    <View style={style.naviImgPos}>
+                    {/* <View style={style.naviImgPos}>
                         <Image style={style.naviImag} source={require('./assets/Character.png')} />
-                    </View>
+                    </View> */}
                     <View style={style.naviColunas}>
                         <View style={style.naviColunas}>
                             <TouchableOpacity style={style.naviRect}>
@@ -94,7 +94,20 @@ const App = () => {
                     {/* Inicio da coluna 2 */}
 
                     <View style={style.coluna2}>
-
+                        <View style={style.CA_Init}>
+                            <TouchableOpacity style={style.atributoPattern}>
+                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                    <Text style={style.atributosTexto}>CA</Text>
+                                    <Text style={style.atributosValor}>XX</Text>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={style.atributoPattern}>
+                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
+                                    <Text style={style.atributosTexto}>Init</Text>
+                                    <Text style={style.atributosValor}>XX</Text>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                        </View>
                     </View>
 
                     {/* Fim da coluna 2 */}

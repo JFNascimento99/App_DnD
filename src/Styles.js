@@ -228,7 +228,7 @@ export const style = StyleSheet.create({
         height: 90,
         width: 280,
         //backgroundColor: '#FFF',
-        //justifyContent: 'space-around',
+        justifyContent: 'space-around',
     }, 
 
     naviImgPos: {
@@ -338,6 +338,15 @@ export const style = StyleSheet.create({
         width: 180,
         height: "100%",
         marginRight: "1%",
+        //backgroundColor: '#FFF',
+    },
+
+    CA_Init: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '100%',
+        height: 80,
+        //backgroundColor: '#FFF'
     },
 
     // Fim dos componentes da coluna 2
@@ -348,7 +357,7 @@ export const style = StyleSheet.create({
         width: 90,
         height: "100%",
         marginRight: "1%",
-        //backgroundColor: "#FFFFFF",
+        backgroundColor: "#FFFFFF",
     },
 
     // Fim dos componentes da coluna 3

@@ -15,16 +15,16 @@ const App = () => {
             <View style={style.telaToda}>
 
                 <View style={style.naviBar}>
-                    {/* <View style={style.naviImgPos}>
+                    <View style={style.naviImgPos}>
                         <Image style={style.naviImag} source={require('./assets/Character.png')} />
-                    </View> */}
+                    </View>
                     <View style={style.naviColunas}>
                         <View style={style.naviColunas}>
                             <TouchableOpacity style={style.naviRect}>
                                 <Text style={style.naviText}>Nome</Text>
                             </TouchableOpacity>
                             <TouchableOpacity style={style.naviRect}>
-                                <Text style={style.naviText}>Raça </Text>
+                                <Text style={style.naviText}>Raça</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -155,6 +155,7 @@ const App = () => {
 
                         <TouchableOpacity style={style.healthBarRec}>
                             <ImageBackground style={style.healthBar} source={require('./assets/BarraHP.png')}>
+                                <Text style={style.HpTxt}>HP</Text>
                                 <Text style={style.HpTxt}>XX</Text>
                                 <Text style={style.HpTxt}>----</Text>
                                 <Text style={style.HpTxt}>XX</Text>

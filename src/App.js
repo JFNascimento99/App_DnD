@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, TouchableOpacity, StyleSheet, Image, View, ImageBackground } from 'react-native';
 import { style } from './Styles'
+import { BottomPopup } from './BottomPopup';
 import { D20 } from './Dados'
 import { ForModif } from './Atributes';
 
 const App = () => {
 
     const [d20, setD20] = useState(0);
+
+    let popupRef = React.createRef()
+
+    const onSowPopup = () => {
+        popupRef.show()
+    }
+
+    const onClosePopup = () => {
+        popupRef.close()
+    }
 
     return (
         <SafeAreaView style={style.container}>
@@ -36,11 +47,16 @@ const App = () => {
 
                     <View style={style.coluna1}>
 
-                        <TouchableOpacity style={style.atributoPattern}>
+                        <TouchableOpacity style={style.atributoPattern} onPress={onSowPopup}>
                             <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
                                 <Text style={style.atributosTexto}>For</Text>
                                 <Text style={style.atributosValor}>XX</Text>
                                 <Text style={style.atributosModif}>+X</Text>
+                                <BottomPopup
+                                    title="For"
+                                    ref={(target) => popupRef = target}
+                                    onTouchOutside={onClosePopup}
+                                />
                             </ImageBackground>
                         </TouchableOpacity>
 
@@ -110,11 +126,7 @@ const App = () => {
                             </TouchableOpacity>
                         </View>
 
-                        <TouchableOpacity style={style.imagemTextos}>
-                            <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
-                                <Text style={style.caracText}>Perícias</Text>
-                            </ImageBackground>
-                        </TouchableOpacity>
+
 
                         <TouchableOpacity style={style.imagemTextos}>
                             <ImageBackground style={style.imagemTextos} source={require('./assets/TextBox.png')}>
@@ -140,6 +152,9 @@ const App = () => {
                             </ImageBackground>
                         </TouchableOpacity>
 
+                        <TouchableOpacity style={style.imagemTextos}>
+                            <ImageBackground style={style.imagemChar} source={require('./assets/CharIMG.png')}></ImageBackground>
+                        </TouchableOpacity>
                     </View>
 
                     {/* Fim da coluna 2 */}

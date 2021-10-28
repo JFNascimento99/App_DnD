@@ -309,6 +309,13 @@ export const style = StyleSheet.create({
         //backgroundColor: '#fff',
     },
 
+    imagemChar: {
+        height: 180,
+        width: '100%',
+        marginTop: '1%',
+        //backgroundColor: '#fff',
+    },
+
     naviImag: {
         width: 50,
         height: 50,

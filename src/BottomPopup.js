@@ -1,6 +1,6 @@
 import {
     Modal, Dimensions, TouchableOpacity,
-    Styles, Viwe, Text, View
+    Styles, Viwe, Text, View, FlatList
 } from 'react-native'
 import React from 'react'
 
@@ -33,6 +33,61 @@ export class BottomPopup extends React.Component {
         )
     }
 
+    renderTitle = () => {
+        const { title } = this.props
+        return (
+            <View>
+                <Text style={{
+                    color: '#182E44',
+                    fontSize: 20,
+                    fontWeight: '500',
+                    margin: 15,
+                }}>
+                    {title}
+                </Text>
+            </View>
+        )
+    }
+
+    renderContent = () => {
+        const { data } = this.props
+        return (
+            <View>
+                <FlatList
+                    style={{ marginBottom: 20 }}
+                    showVericalScrollIndicator={false}
+                    data={data}
+                    renderItem={this.renderItem}
+                    extraData={data}
+                    keyExtractor={(item, index) => index.toString()}
+                    ItemSeparatorComponent={this.renderSeparator}
+                    contentContainerStyle={{
+                        paddingBottom: 40
+                    }}
+                />
+            </View>
+        )
+    }
+
+
+    // Faz os items aparecerem
+     
+    renderItem = ({ item }) => {
+        return (
+            <View style={{height: 50, flex: 1, alignItems: 'flex-start'}}>
+                <Text style={{fontSize: 18, color: '#182E44'}}>{item && item.nome}</Text>
+            </View>
+        )
+    }
+
+    renderSeparator = () => {
+        return (
+            <View
+                style={{opacity: 0.1, backgroundColor: '#182E44', height: 1,}}
+            />
+        )
+    }
+
     render() {
         let { show } = this.state
         const { onTouchOtside, title } = this.props
@@ -60,17 +115,9 @@ export class BottomPopup extends React.Component {
                         paddingHorizontal: 10,
                         maxHeight: deviceHeight * 0.4,
                     }}>
-                        <View>
-                            <Text style={{
-                                color: '#182E44',
-                                fontSize: 20,
-                                fontWeight: '500',
-                                margin: 15,
-                            }}>
-                                {title}
-                            </Text>
-                        </View>
 
+                        {this.renderTitle()}
+                        {this.renderContent()}
                     </View>
 
                 </View>

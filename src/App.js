@@ -5,6 +5,77 @@ import { BottomPopup } from './BottomPopup';
 import { D20 } from './Dados'
 import { ForModif } from './Atributes';
 
+const forList = [
+    {
+        nome: 'Atletismo'
+    },
+]
+
+const desList = [
+    {
+        nome: 'Acrobacia'
+    },
+    {
+        nome: 'Furtividade'
+    },
+    {
+        nome: 'Prestidigitação'
+    }
+]
+
+const intList = [
+    {
+        nome: 'Arcanismo'
+    },
+    {
+        nome: 'História'
+    },
+    {
+        nome: 'Investigação'
+    },
+    {
+        nome: 'Natureza'
+    },
+    {
+        nome: 'Religião'
+    }
+]
+
+const sabList = [
+    {
+        nome: 'Intuição'
+    },
+    {
+        nome: 'Medicina'
+    },
+    {
+        nome: 'Percepção'
+    },
+    {
+        nome: 'Sobrevivência'
+    }
+]
+
+const carList = [
+    {
+        nome: 'Atuação'
+    },
+    {
+        nome: 'Blefar'
+    },
+    {
+        nome: 'Intimidação'
+    },
+    {
+        nome: 'Lidar com animais'
+    },
+    {
+        nome: 'Persuasão'
+    }
+]
+
+
+
 const App = () => {
 
     const [d20, setD20] = useState(0);
@@ -53,9 +124,10 @@ const App = () => {
                                 <Text style={style.atributosValor}>XX</Text>
                                 <Text style={style.atributosModif}>+X</Text>
                                 <BottomPopup
-                                    title="For"
+                                    title="Força"
                                     ref={(target) => popupRef = target}
                                     onTouchOutside={onClosePopup}
+                                    data={forList}
                                 />
                             </ImageBackground>
                         </TouchableOpacity>
@@ -65,6 +137,12 @@ const App = () => {
                                 <Text style={style.atributosTexto}>Des</Text>
                                 <Text style={style.atributosValor}>XX</Text>
                                 <Text style={style.atributosModif}>+X</Text>
+                                <BottomPopup
+                                    title="Destreza"
+                                    ref={(target) => popupRef = target}
+                                    onTouchOutside={onClosePopup}
+                                    data={desList}
+                                />
                             </ImageBackground>
                         </TouchableOpacity>
 
@@ -73,6 +151,12 @@ const App = () => {
                                 <Text style={style.atributosTexto}>Cons</Text>
                                 <Text style={style.atributosValor}>XX</Text>
                                 <Text style={style.atributosModif}>+X</Text>
+                                <BottomPopup
+                                    title="Inteligência"
+                                    ref={(target) => popupRef = target}
+                                    onTouchOutside={onClosePopup}
+                                    data={desList}
+                                />
                             </ImageBackground>
                         </TouchableOpacity>
 

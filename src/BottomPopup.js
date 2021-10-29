@@ -108,7 +108,7 @@ export class BottomPopup extends React.Component {
                 >
                     {this.renderOutsideThouchable(onTouchOtside)}
                     <View style={{
-                        backgroundColor: '#FFFFFF',
+                        backgroundColor: '#C4C4C4',
                         width: '100%',
                         borderTopRightRadius: 10,
                         borderTopLeftRadius: 10,

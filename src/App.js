@@ -1,78 +1,11 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, TouchableOpacity, StyleSheet, Image, View, ImageBackground } from 'react-native';
 import { style } from './Styles'
+import { AtributeCard } from './AtributesCard'
 import { BottomPopup } from './BottomPopup';
 import { D20 } from './Dados'
 import { ForModif } from './Atributes';
-
-const forList = [
-    {
-        nome: 'Atletismo'
-    },
-]
-
-const desList = [
-    {
-        nome: 'Acrobacia'
-    },
-    {
-        nome: 'Furtividade'
-    },
-    {
-        nome: 'Prestidigitação'
-    }
-]
-
-const intList = [
-    {
-        nome: 'Arcanismo'
-    },
-    {
-        nome: 'História'
-    },
-    {
-        nome: 'Investigação'
-    },
-    {
-        nome: 'Natureza'
-    },
-    {
-        nome: 'Religião'
-    }
-]
-
-const sabList = [
-    {
-        nome: 'Intuição'
-    },
-    {
-        nome: 'Medicina'
-    },
-    {
-        nome: 'Percepção'
-    },
-    {
-        nome: 'Sobrevivência'
-    }
-]
-
-const carList = [
-    {
-        nome: 'Atuação'
-    },
-    {
-        nome: 'Blefar'
-    },
-    {
-        nome: 'Intimidação'
-    },
-    {
-        nome: 'Lidar com animais'
-    },
-    {
-        nome: 'Persuasão'
-    }
-]
+import { forList, desList, intList, sabList, carList } from './Pericias'
 
 
 
@@ -118,71 +51,17 @@ const App = () => {
 
                     <View style={style.coluna1}>
 
-                        <TouchableOpacity style={style.atributoPattern} onPress={onSowPopup}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>For</Text>
-                                <Text style={style.atributosValor}>XX</Text>
-                                <Text style={style.atributosModif}>+X</Text>
-                                <BottomPopup
-                                    title="Força"
-                                    ref={(target) => popupRef = target}
-                                    onTouchOutside={onClosePopup}
-                                    data={forList}
-                                />
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCard props={{ title: "For", name: "Força", list: forList }} />
 
-                        <TouchableOpacity style={style.atributoPattern}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>Des</Text>
-                                <Text style={style.atributosValor}>XX</Text>
-                                <Text style={style.atributosModif}>+X</Text>
-                                <BottomPopup
-                                    title="Destreza"
-                                    ref={(target) => popupRef = target}
-                                    onTouchOutside={onClosePopup}
-                                    data={desList}
-                                />
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCard props={{title: "Des", name: "Destreza", list: desList }} />
 
-                        <TouchableOpacity style={style.atributoPattern}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>Cons</Text>
-                                <Text style={style.atributosValor}>XX</Text>
-                                <Text style={style.atributosModif}>+X</Text>
-                                <BottomPopup
-                                    title="Inteligência"
-                                    ref={(target) => popupRef = target}
-                                    onTouchOutside={onClosePopup}
-                                    data={desList}
-                                />
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCard props={{title: "Cons", name: "Constituição"}} />
 
-                        <TouchableOpacity style={style.atributoPattern}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>Int</Text>
-                                <Text style={style.atributosValor}>XX</Text>
-                                <Text style={style.atributosModif}>+X</Text>
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCard props={{title: "Int", name: "Inteligência", list: intList}} />
 
-                        <TouchableOpacity style={style.atributoPattern}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>Sab</Text>
-                                <Text style={style.atributosValor}>XX</Text>
-                                <Text style={style.atributosModif}>+X</Text>
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCard props={{title: "Sab", name: "Sabedoria", list: sabList}} />
 
-                        <TouchableOpacity style={style.atributoPattern}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>Car</Text>
-                                <Text style={style.atributosValor}>XX</Text>
-                                <Text style={style.atributosModif}>+X</Text>
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCard props={{title: "Car", name: "Carisma", list: carList}} />
 
                         <TouchableOpacity style={style.botaoAmareloEsq}>
                             <Image source={require('./assets/Scroll.png')} resizeMode='contain' style={style.imagemBotom} />

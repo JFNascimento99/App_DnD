@@ -1,6 +1,6 @@
-export function modif(){
+export function modif(atributo){
 
-    if(atributo == 0 ||atributo == 1){return -5}
+    if(atributo <= 1){return -5}
 
     else if(atributo == 2 || atributo == 3){return -4}
 

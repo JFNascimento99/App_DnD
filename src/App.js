@@ -6,7 +6,8 @@ import { BottomPopup } from './BottomPopup';
 import { D20 } from './Dados'
 import { ForModif } from './Caracteristicas/Modifiers';
 import { forList, desList, intList, sabList, carList } from './Caracteristicas/Pericias';
-
+import { AtributeCardInit } from './Caracteristicas/Iniciativa';
+import { AtributeCardCA } from './Caracteristicas/CA';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     const [inteligenceValue, setInteligenceValue] = useState(10);
     const [wisdonValue, setWisdonValue] = useState(10);
     const [charismaValue, setCharismaValue] = useState(10);
+    const [caValue, setCaValue] = useState(10);
 
 
     let popupRef = React.createRef()
@@ -58,17 +60,17 @@ const App = () => {
 
                     <View style={style.coluna1}>
 
-                        <AtributeCard props={{ title: "For", name: "Força", list: forList, value: forceValue, setValue: setForceValue}} />
+                        <AtributeCard props={{ title: "For", name: "Força", list: forList, value: forceValue, setValue: setForceValue }} />
 
-                        <AtributeCard props={{title: "Des", name: "Destreza", list: desList, value: dexteretyValue, setValue: setDexteretyValue}} />
+                        <AtributeCard props={{ title: "Des", name: "Destreza", list: desList, value: dexteretyValue, setValue: setDexteretyValue }} />
 
-                        <AtributeCard props={{title: "Cons", name: "Constituição", value: constitutionValue, setValue: setConstitutionValue}} />
+                        <AtributeCard props={{ title: "Cons", name: "Constituição", value: constitutionValue, setValue: setConstitutionValue }} />
 
-                        <AtributeCard props={{title: "Int", name: "Inteligência", list: intList, value: inteligenceValue, setValue: setInteligenceValue}} />
+                        <AtributeCard props={{ title: "Int", name: "Inteligência", list: intList, value: inteligenceValue, setValue: setInteligenceValue }} />
 
-                        <AtributeCard props={{title: "Sab", name: "Sabedoria", list: sabList, value: wisdonValue, setValue: setWisdonValue}} />
+                        <AtributeCard props={{ title: "Sab", name: "Sabedoria", list: sabList, value: wisdonValue, setValue: setWisdonValue }} />
 
-                        <AtributeCard props={{title: "Car", name: "Carisma", list: carList, value: charismaValue, setValue: setCharismaValue}} />
+                        <AtributeCard props={{ title: "Car", name: "Carisma", list: carList, value: charismaValue, setValue: setCharismaValue }} />
 
                         <TouchableOpacity style={style.botaoAmareloEsq}>
                             <Image source={require('./assets/Scroll.png')} resizeMode='contain' style={style.imagemBotom} />
@@ -81,19 +83,11 @@ const App = () => {
 
                     <View style={style.coluna2}>
                         <View style={style.CA_Init}>
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>CA</Text>
-                                    <Text style={style.atributosValor}>XX</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
 
-                            <TouchableOpacity style={style.atributoPattern}>
-                                <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                    <Text style={style.atributosTexto}>Init</Text>
-                                    <Text style={style.atributosValor}>XX</Text>
-                                </ImageBackground>
-                            </TouchableOpacity>
+                            <AtributeCardCA props={{ title: "CA", name: "Classe de Armadura", value: caValue, setValue: setCaValue }} />
+
+                            <AtributeCardInit props={{ title: "Init.", name: "Iniciativa", value: dexteretyValue, setValue: setDexteretyValue }} />
+
                         </View>
 
 

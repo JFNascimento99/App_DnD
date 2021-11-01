@@ -7,7 +7,7 @@ import { D20 } from './Dados'
 import { ForModif } from './Caracteristicas/Modifiers';
 import { forList, desList, intList, sabList, carList } from './Caracteristicas/Pericias';
 import { AtributeCardInit } from './Caracteristicas/Iniciativa';
-import { AtributeCardCA } from './Caracteristicas/CA';
+import { AtributeCardCA, AtributeCardDesloc } from './Caracteristicas/CaDesloc';
 
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
     const [wisdonValue, setWisdonValue] = useState(10);
     const [charismaValue, setCharismaValue] = useState(10);
     const [caValue, setCaValue] = useState(10);
+    const [deslocValue, setDeslocValue] = useState(9);
 
 
     let popupRef = React.createRef()
@@ -126,11 +127,14 @@ const App = () => {
                     {/* Inicio da coluna 3 */}
 
                     <View style={style.coluna3}>
-                        <TouchableOpacity style={style.atributoPattern}>
-                            <ImageBackground style={style.imagemAtributo} source={require('./assets/Atributos.png')}>
-                                <Text style={style.atributosTexto}>Desloc</Text>
-                            </ImageBackground>
-                        </TouchableOpacity>
+                        <AtributeCardDesloc
+                            props={{
+                                title: "Desloc.",
+                                name: "Classe de armadura",
+                                value: deslocValue,
+                                setValue: setDeslocValue
+                            }}
+                        />
 
                         <TouchableOpacity style={style.healthBarRec}>
                             <ImageBackground style={style.healthBar} source={require('./assets/BarraHP.png')}>

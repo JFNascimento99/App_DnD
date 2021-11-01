@@ -1,6 +1,6 @@
 import {
     Modal, Dimensions, TouchableOpacity,
-    Styles, Viwe, Text, View, FlatList
+    Styles, Viwe, Text, View, FlatList, TextComponent
 } from 'react-native'
 import React from 'react'
 
@@ -36,7 +36,10 @@ export class BottomPopup extends React.Component {
     renderTitle = () => {
         const { title } = this.props
         return (
-            <View>
+            <View style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+            }}>
                 <Text style={{
                     color: '#182E44',
                     fontSize: 20,
@@ -45,6 +48,27 @@ export class BottomPopup extends React.Component {
                 }}>
                     {title}
                 </Text>
+                {
+                    this.props.value ? (
+                        <View style={{
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                        }}>
+                            <TouchableOpacity
+                                onPress={() => this.props.setValue(this.props.value + 1)}
+                            >
+                                <Text style={{ fontSize: 25 }}> + </Text>
+                            </TouchableOpacity>
+                            <Text> {this.props.value} </Text>
+                            <TouchableOpacity
+                                onPress={() => this.props.setValue(this.props.value - 1)}
+                            >
+                                <Text style={{ fontSize: 25 }}> - </Text>
+                            </TouchableOpacity>
+                        </View>
+                    ) : null
+                }
+
             </View>
         )
     }
@@ -71,11 +95,11 @@ export class BottomPopup extends React.Component {
 
 
     // Faz os items aparecerem
-     
+
     renderItem = ({ item }) => {
         return (
-            <View style={{height: 50, flex: 1, alignItems: 'flex-start'}}>
-                <Text style={{fontSize: 18, color: '#182E44'}}>{item && item.nome}</Text>
+            <View style={{ height: 50, flex: 1, alignItems: 'flex-start' }}>
+                <Text style={{ fontSize: 18, color: '#182E44' }}>{item && item.nome}</Text>
             </View>
         )
     }
@@ -83,7 +107,7 @@ export class BottomPopup extends React.Component {
     renderSeparator = () => {
         return (
             <View
-                style={{opacity: 0.1, backgroundColor: '#182E44', height: 1,}}
+                style={{ opacity: 0.1, backgroundColor: '#182E44', height: 1, }}
             />
         )
     }

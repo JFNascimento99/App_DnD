@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, TouchableOpacity, StyleSheet, Image, View, ImageBackground } from 'react-native';
 import { style } from './Styles'
-import { AtributeCard } from './AtributesCard'
+import { AtributeCard } from './Caracteristicas/AtributesCard'
 import { BottomPopup } from './BottomPopup';
 import { D20 } from './Dados'
-import { ForModif } from './Atributes';
-import { forList, desList, intList, sabList, carList } from './Pericias'
+import { ForModif } from './Caracteristicas/Modifiers';
+import { forList, desList, intList, sabList, carList } from './Caracteristicas/Pericias';
 
 
 
 const App = () => {
 
     const [d20, setD20] = useState(0);
+    const [forceValue, setForceValue] = useState(10);
+    const [dexteretyValue, setDexteretyValue] = useState(10);
+    const [constitutionValue, setConstitutionValue] = useState(10);
+    const [inteligenceValue, setInteligenceValue] = useState(10);
+    const [wisdonValue, setWisdonValue] = useState(10);
+    const [charismaValue, setCharismaValue] = useState(10);
+
 
     let popupRef = React.createRef()
 
@@ -51,17 +58,17 @@ const App = () => {
 
                     <View style={style.coluna1}>
 
-                        <AtributeCard props={{ title: "For", name: "Força", list: forList }} />
+                        <AtributeCard props={{ title: "For", name: "Força", list: forList, value: forceValue, setValue: setForceValue}} />
 
-                        <AtributeCard props={{title: "Des", name: "Destreza", list: desList }} />
+                        <AtributeCard props={{title: "Des", name: "Destreza", list: desList, value: dexteretyValue, setValue: setDexteretyValue}} />
 
-                        <AtributeCard props={{title: "Cons", name: "Constituição"}} />
+                        <AtributeCard props={{title: "Cons", name: "Constituição", value: constitutionValue, setValue: setConstitutionValue}} />
 
-                        <AtributeCard props={{title: "Int", name: "Inteligência", list: intList}} />
+                        <AtributeCard props={{title: "Int", name: "Inteligência", list: intList, value: inteligenceValue, setValue: setInteligenceValue}} />
 
-                        <AtributeCard props={{title: "Sab", name: "Sabedoria", list: sabList}} />
+                        <AtributeCard props={{title: "Sab", name: "Sabedoria", list: sabList, value: wisdonValue, setValue: setWisdonValue}} />
 
-                        <AtributeCard props={{title: "Car", name: "Carisma", list: carList}} />
+                        <AtributeCard props={{title: "Car", name: "Carisma", list: carList, value: charismaValue, setValue: setCharismaValue}} />
 
                         <TouchableOpacity style={style.botaoAmareloEsq}>
                             <Image source={require('./assets/Scroll.png')} resizeMode='contain' style={style.imagemBotom} />
